@@ -58,7 +58,6 @@ public class Repository<TEntity> : IRepository<TEntity> where TEntity : Auditabl
     {
         entity.UpdatedAt = DateTime.UtcNow;
         entities.Entry(entity).State = EntityState.Modified;
-        
         return await Task.FromResult(entity);
     }
 }
