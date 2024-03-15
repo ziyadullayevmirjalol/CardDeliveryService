@@ -2,6 +2,7 @@
 
 namespace CardDeliveryService.DTOs.CardModels;
 
+
 public class CardCreateModel
 {
     public Bank bank { get; set; }
